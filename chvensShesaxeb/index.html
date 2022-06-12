@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩვენ შესახებ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8eee7;
+        }
+
+        /* navigation styles */
+        .icon div {
+            width: 18px;
+            height: 3.5px;
+            background-color: white;
+            margin: 3px 0;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #f4decb;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #49274a;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #f8eee7;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #94618e;
+            color: #f4decb;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        /* resolutions */
+        @media screen and (max-width: 915px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 915px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 412px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+
+            .topnav.topnav.responsive a {
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width: 412px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        #author {
+            display: flexbox;
+            text-align: center;
+            font-size: small;
+            color: white;
+            background-color: #49274a;
+            height: 30px;
+            justify-content: center;
+            margin-bottom: 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../mtavari/index.html" class="active">მთავარი</a>
+        <a href="../chvensShesaxeb/index.html">ჩვენ შესახებ</a>
+        <a href="../gancxadebebi/index.html">განცხადებები</a>
+        <a href="../chveniAgentebi/index.html">ჩვენი აგენტები</a>
+        <a href="../logIn/index.html">ავტორიზაცია</a>
+        <a href="../signUp/index.html">რეგისტრაცია</a>
+        <a href="../contact/index.html">კონტაქტი</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+    </div>
+
+    <div style="border:1px solid silver;max-width:80%;margin:auto;margin-top:10%;padding: 2%;">
+        <h3 style="color: black;">
+            ლიდერი კომპანია უძრავი ქონების ბაზარზე!
+        </h3>
+        <p>
+            კომპანია შეიქმნა 2010 წელს და წარმატებულად აგრძელებს თავის საქმიანობას.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eveniet assumenda aliquid vero odit.
+            Inventore iure laboriosam id voluptatibus. In adipisci vero obcaecati. Vero adipisci atque sapiente nulla
+            consectetur suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione alias vitae, iste consequatur ipsum
+            delectus ducimus maiores odit, omnis neque expedita. Rerum accusamus harum laboriosam consequuntur
+            reiciendis libero architecto.</p>
+    </div>
+    <div id="author">
+        <p>პროექტზე მუშაობდა გიორგი აბულაძე</p>
+    </div>
+    <script>
+        //navigation functions
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
